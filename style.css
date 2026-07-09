@@ -50,3 +50,15 @@ footer {
     margin-top: auto;
     padding: 2rem;
 }
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.table-container table {
+    flex: 1;
+    min-width: 300px; /* Ensures they don't get too squished */
+}
