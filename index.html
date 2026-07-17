@@ -1,151 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>bensbeans's blog</title>
-    <style>
-        /* General Layout */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    <meta charset="UTF-8">
+    <title>bensbeans's blog</title>
+    <style>
+        /* General Layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-        header {
-            background: #2c3e50;
-            color: white;
-            width: 100%;
-            padding: 2rem 0;
-            text-align: center;
-        }
+        header {
+            background: #2c3e50;
+            color: white;
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+        }
 
-        main {
-            max-width: 900px;
-            width: 90%;
-            margin: 2rem 0;
-        }
+        main {
+            max-width: 900px;
+            width: 90%;
+            margin: 2rem 0;
+        }
 
-        /* Card Styling */
-        .card {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
 
-        /* Table Container for side-by-side layout */
-        .table-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
 
-        table {
-            flex: 1;
-            min-width: 300px;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
+        table {
+            flex: 1;
+            min-width: 300px;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
 
-        td, th {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
+        td, th {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>bensbeans's blog:</h1>
+    <h1>bensbeans's blog:</h1>
 </header>
 
 <main>
-    <div class="card">
-        <h2>2025-26 SEASON</h2>
-        <div class="table-container">
-            
-            <table>
-                <tbody>
-                    <tr><td>25-10-2026</td><td>Texas A&amp;M HSMC</td></tr>
-                    <tr><td>05-11-2026</td><td>AMC 10A</td></tr>
-                    <tr><td>13-11-2026</td><td>AMC 10B</td></tr>
-                    <tr><td>18-01-2026</td><td>EMCC</td></tr>
-                    <tr><td>31-01-2026</td><td>MATHCOUNTS Chapter</td></tr>
-                    <tr><td>05-11-2026</td><td>AIME II</td></tr>
-                    <tr><td>07-03-2026</td><td>MATHCOUNTS State</td></tr>
-                    <tr><td>06-12-2026</td><td>BMT Online</td></tr>
-                    <tr><td>18-04-2026</td><td>ARML Local</td></tr>
-                    <tr><td>30-05-2026</td><td>ARML</td></tr>
-                </tbody>
-            </table>
-        </div>
-            <div>
-        <h2>2026-27 SEASON</h2>
-        <table>
-                <tbody>
-                    <tr><td>05-11-2026</td><td>AMC 10A</td></tr>
-                    <tr><td>13-11-2026</td><td>AMC 10B</td></tr>
-                </tbody>
-            </table>
-            
-        </div>
-    </div>
+    <div class="card">
+        <h2>2025-26 SEASON</h2>
+        <div class="table-container">
+            <div>
+                <table>
+                    <tbody>
+                        <tr><td>25-10-2026</td><td>Texas A&amp;M HSMC</td></tr>
+                        <tr><td>05-11-2026</td><td>AMC 10A</td></tr>
+                        <tr><td>13-11-2026</td><td>AMC 10B</td></tr>
+                        <tr><td>18-01-2026</td><td>EMCC</td></tr>
+                        <tr><td>31-01-2026</td><td>MATHCOUNTS Chapter</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div>
+                <h3>2026-27 SEASON</h3>
+                <table>
+                    <tbody>
+                        <tr><td>05-11-2026</td><td>AIME II</td></tr>
+                        <tr><td>07-03-2026</td><td>MATHCOUNTS State</td></tr>
+                        <tr><td>06-12-2026</td><td>BMT Online</td></tr>
+                        <tr><td>18-04-2026</td><td>ARML Local</td></tr>
+                        <tr><td>30-05-2026</td><td>ARML</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="video-container">
+                <!-- Added ?autoplay=1&mute=1 to start immediately and avoid browser blocks -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </main>
 
 </body>
 </html>
-
-
-
-
-
-
-
-<main>
-    <div class="card">
-        <h2>2025-26 SEASON</h2>
-        <div class="table-container">
-            
-            <div>
-                <table>
-                    <tbody>
-                        <tr><td>25-10-2026</td><td>Texas A&amp;M HSMC</td></tr>
-                        <tr><td>05-11-2026</td><td>AMC 10A</td></tr>
-                        <tr><td>13-11-2026</td><td>AMC 10B</td></tr>
-                        <tr><td>18-01-2026</td><td>EMCC</td></tr>
-                        <tr><td>31-01-2026</td><td>MATHCOUNTS Chapter</td></tr>
-                    </tbody>
-                </table>
-            </div>
-<br><br>
-            <div>
-                <h3>2026-27 SEASON</h3>
-                <table>
-                    <tbody>
-                        <tr><td>05-11-2026</td><td>AIME II</td></tr>
-                        <tr><td>07-03-2026</td><td>MATHCOUNTS State</td></tr>
-                        <tr><td>06-12-2026</td><td>BMT Online</td></tr>
-                        <tr><td>18-04-2026</td><td>ARML Local</td></tr>
-                        <tr><td>30-05-2026</td><td>ARML</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</main>
