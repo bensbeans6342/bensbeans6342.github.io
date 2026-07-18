@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 header {
@@ -38,6 +39,7 @@ h2 {
     border-bottom: 2px solid #3498db;
     display: inline-block;
     padding-bottom: 5px;
+    margin-top: 0;
 }
 
 ul {
@@ -49,16 +51,47 @@ footer {
     color: #777;
     margin-top: auto;
     padding: 2rem;
+    text-align: center;
 }
 
+/* Table Layout */
 .table-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .table-container table {
     flex: 1;
-    min-width: 300px; /* Ensures they don't get too squished */
+    min-width: 300px;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Video & Instagram Scroller */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.instagram-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scrollbar-width: thin;
+}
+
+.instagram-scroller blockquote {
+    flex: 0 0 320px; 
+    margin: 0 !important;
 }
