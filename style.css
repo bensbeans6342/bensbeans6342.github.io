@@ -42,10 +42,6 @@ h2 {
     margin-top: 0;
 }
 
-ul {
-    list-style-type: square;
-}
-
 footer {
     font-size: 0.9rem;
     color: #777;
@@ -78,19 +74,22 @@ td, th {
 /* Instagram Grid Layout */
 .instagram-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 15px;
+    align-items: start;
 }
 
-/* Force the Instagram wrapper to obey the grid */
-.instagram-grid > .instagram-media {
+.instagram-item {
+    width: 100%;
+    min-width: 0; 
+}
+
+/* Force override of Instagram's inline script styles */
+.instagram-grid iframe,
+.instagram-grid .instagram-media {
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
-}
-
-/* Hide the Instagram script's internal width enforcement if possible */
-.instagram-grid iframe {
-    width: 100% !important;
+    margin: 0 !important;
 }
