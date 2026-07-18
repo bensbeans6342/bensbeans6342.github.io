@@ -78,13 +78,15 @@ td, th {
 /* Instagram Grid Layout */
 .instagram-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr; /* Explicitly forces two columns */
     gap: 20px;
     margin-top: 15px;
+    align-items: start;
 }
 
 .instagram-grid blockquote {
     margin: 0 !important;
-    max-width: 100% !important;
     width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0; /* Prevents the grid item from expanding past its container */
 }
