@@ -48,6 +48,35 @@
             margin-top: 0;
         }
 
+        /* Table Layout */
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .table-container table {
+            flex: 1;
+            min-width: 300px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Video Styling */
+        .video-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
         /* Instagram Horizontal Scroller */
         .instagram-scroller {
             display: flex;
@@ -57,16 +86,6 @@
             scrollbar-width: thin;
         }
 
-        .instagram-scroller::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .instagram-scroller::-webkit-scrollbar-thumb {
-            background-color: #ccc;
-            border-radius: 4px;
-        }
-
-        /* Force posts to stay a fixed width for scrolling */
         .instagram-scroller blockquote {
             flex: 0 0 320px; 
             margin: 0 !important;
@@ -88,14 +107,50 @@
 </header>
 
 <main>
-    <!-- Featured Instagram Posts -->
+    <!-- Seasons Card -->
+    <div class="card">
+        <h2>2025-26 & 2026-27 SEASONS</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>2025-26 Season</th></tr></thead>
+                <tbody>
+                    <tr><td>25-10-2026 | Texas A&amp;M HSMC</td></tr>
+                    <tr><td>05-11-2026 | AMC 10A</td></tr>
+                    <tr><td>13-11-2026 | AMC 10B</td></tr>
+                    <tr><td>18-01-2026 | EMCC</td></tr>
+                    <tr><td>31-01-2026 | MATHCOUNTS Chapter</td></tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <thead><tr><th>2026-27 Season</th></tr></thead>
+                <tbody>
+                    <tr><td>05-11-2026 | AIME II</td></tr>
+                    <tr><td>07-03-2026 | MATHCOUNTS State</td></tr>
+                    <tr><td>06-12-2026 | BMT Online</td></tr>
+                    <tr><td>18-04-2026 | ARML Local</td></tr>
+                    <tr><td>30-05-2026 | ARML</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="video-wrapper">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Instagram Featured Posts -->
     <div class="card">
         <h2>Featured Instagrams</h2>
         <div class="instagram-scroller">
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DaN8nF_iWwJ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" data-instgrm-version="14"><a href="https://www.instagram.com/p/DaN8nF_iWwJ/"></a></blockquote>
-            
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Da6WMvvDKQb/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" data-instgrm-version="14"><a href="https://www.instagram.com/p/Da6WMvvDKQb/"></a></blockquote>
-            
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Da7o0NQkbEN/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" data-instgrm-version="14"><a href="https://www.instagram.com/reel/Da7o0NQkbEN/"></a></blockquote>
         </div>
         <script async src="//www.instagram.com/embed.js"></script>
