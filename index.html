@@ -1,302 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ancient Civilizations ABCs</title>
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #333333;
-      --heading-color: #007bff;
-      --subtext-color: #555555;
-      --border-color: #ddd;
-      --controls-bg: #fff;
-    }
-
-    [data-theme="dark"] {
-      --bg-color: #121212;
-      --text-color: #e0e0e0;
-      --heading-color: #4dabf7;
-      --subtext-color: #b0b0b0;
-      --border-color: #333333;
-      --controls-bg: #1e1e1e;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 650px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: var(--bg-color) !important;
-      color: var(--text-color) !important;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 2px solid var(--border-color);
-      flex-wrap: wrap;
-    }
-
-    select, button, .nav-btn {
-      padding: 8px 16px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: 1px solid var(--border-color);
-      background-color: var(--controls-bg);
-      color: var(--text-color);
-      text-decoration: none;
-      display: inline-block;
-      text-align: center;
-    }
-
-    button, .nav-btn {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    button:hover, .nav-btn:hover {
-      background-color: #0056b3;
-    }
-    
-    button:disabled {
-      background-color: #cccccc;
-      cursor: not-allowed;
-    }
-    
-    button:disabled:hover {
-      background-color: #cccccc;
-    }
-
-    .display-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .letter-heading {
-      font-size: 3.5rem;
-      font-weight: bold;
-      margin: 0;
-      color: var(--heading-color);
-    }
-
-    .item-title {
-      font-size: 2rem;
-      margin: 0;
-      color: var(--text-color);
-    }
-
-    .item-description {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: var(--subtext-color);
-    }
-
-    .item-image {
-      width: 100%;
-      max-height: 450px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-    }
-
-    .footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 2px solid var(--border-color);
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .btn-group {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    #themeToggleBtn {
-      align-self: flex-start;
-      background-color: #6c757d;
-    }
-    #themeToggleBtn:hover {
-      background-color: #5a6268;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bensbeans's blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Ancient Civilizations and Epics: An ABC Book</h1>
-  <h3>By Benjamin Dong</h3>
+<header>
+    <h1>bensbeans's blog</h1>
+</header>
 
-  <div class="controls">
-    <button id="prevBtn">Previous</button>
-    
-    <label for="letterSelect"><strong>Letter:</strong></label>
-    <select id="letterSelect">
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="C">C</option>
-      <option value="D">D</option>
-      <option value="E">E</option>
-      <option value="F">F</option>
-      <option value="G">G</option>
-      <option value="H">H</option>
-      <option value="I">I</option>
-      <option value="J">J</option>
-      <option value="K">K</option>
-      <option value="L">L</option>
-      <option value="M">M</option>
-      <option value="N">N</option>
-      <option value="O">O</option>
-      <option value="P">P</option>
-      <option value="Q">Q</option>
-      <option value="R">R</option>
-      <option value="S">S</option>
-      <option value="T">T</option>
-      <option value="U">U</option>
-      <option value="V">V</option>
-      <option value="W">W</option>
-      <option value="X">X</option>
-      <option value="Y">Y</option>
-      <option value="Z">Z</option>
-    </select>
-    
-    <button id="goBtn">GO!</button>
-    <button id="nextBtn">Next</button>
-  </div>
+<main>
+    <!-- Seasons Card -->
+    <h3>
+        Looking for the Ancient Civs, project? Head to: <a href="https://www.bensbeans.github.io/abcs">bensbeans.github.io/abcs</a>
+    </h3>
+    <div class="card">
+        <h2>2025-26 & 2026-27 SEASONS</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>2025-26 Season</th></tr></thead>
+                <tbody>
+                    <tr><td>25-10-2026 | Texas A&amp;M HSMC</td></tr>
+                    <tr><td>05-11-2026 | AMC 10A</td></tr>
+                    <tr><td>13-11-2026 | AMC 10B</td></tr>
+                    <tr><td>18-01-2026 | EMCC</td></tr>
+                    <tr><td>31-01-2026 | MATHCOUNTS Chapter</td></tr>
+                </tbody>
+            </table>
 
-  <div class="display-container">
-    <h1 id="displayLetter" class="letter-heading"></h1>
-    <h2 id="displayName" class="item-title"></h2>
-    <p id="displayDescription" class="item-description"></p>
-    <img id="displayImage" class="item-image" src="" alt="" />
-  </div>
-
-  <div class="footer">
-    <div class="btn-group">
-      <button id="themeToggleBtn">Switch to Dark Mode</button>
-      <a href="works-cited.html" class="nav-btn">Works Cited</a>
-    </div>
-    <p>
-      Currently complete letters: D, P, S, T, Y, Z; <br>
-      2x China, 1x Egypt, 1x Odyssey, 1x Mesopotamia, 1x America <br>
-      Last Updated: 09-09-2026 17:48
-    </p>
-  </div>
-
-  <script>
-    const letterData = {
-      'A': { name: '', description: '' },
-      'B': { name: '', description: '' },
-      'C': { name: '', description: '' },
-      'D': { name: 'Daoism', description: 'Daoism is a peaceful way of thinking created in ancient China around 500 BCE by a wise philosopher named Laozi. It taught people to live in balance with nature rather than fighting the world around them. It is important because it helped ancient Chinese society stay peaceful, kind, and respectful toward nature. (Ancient China)' },
-      'E': { name: '', description: '' },
-      'F': { name: '', description: '' },
-      'G': { name: '', description: '' },
-      'H': { name: '', description: '' },
-      'I': { name: '', description: '' },
-      'J': { name: '', description: '' },
-      'K': { name: '', description: '' },
-      'L': { name: '', description: '' },
-      'M': { name: '', description: '' },
-      'N': { name: '', description: '' },
-      'O': { name: '', description: '' },
-      'P': { name: 'Pyramids of Egypt', description: 'The Pyramids of Giza are tombs for Pharaohs, who were the leaders of Ancient Egypt. They were built in Giza, Egypt, around 2500 BCE. Common working-class people lifted heavy stones to build the pyramids. These pyramids are significant because they serve as a physical representation of the mathematics and engineering of the Egyptians. (Egypt)' },
-      'Q': { name: '', description: '' },
-      'R': { name: '', description: '' },
-      'S': { name: 'Sumer', description: 'In 4000 BCE, Sumer was a region of Mesopotamia that contained independent city-states. The Sumerians built temples, practiced agriculture, and traded with other nations. Sumer is important because they invented the wheel, the sailboat, and the first writing system. (Mesopotamia)' },
-      'T': { name: 'Trojan Horse', description: 'The Trojan Horse was a big wooden horse built by the Greek soldiers in the Trojan War. The Greeks hid inside the horse and tricked the Trojans into bringing it into their city as a gift. At night, the soldiers snuck out and attacked the city from the inside. This is a famous story that teaches how clever thinking can win a battle when raw strength isn’t enough by itself. (Odyssey)' },
-      'U': { name: '', description: '' },
-      'V': { name: '', description: '' },
-      'W': { name: '', description: '' },
-      'X': { name: '', description: '' },
-      'Y': { name: 'Yellow River', description: 'The Yellow River is a river in Northern China that was important to the Shang Dynasty because it provided fertile soil and water for agriculture. It helped the people grow crops and develop their civilizations, but it often flooded, destroying the civilizations along its banks. (Ancient China)' },
-      'Z': { name: 'Zero', description: 'Zero was a concept discovered by thinkers in Ancient America around 36 BCE. Zero is used to stand for “nothing”. Inventing zero allowed for the development of complex mathematics. (America [Olmec and Chavin])' }
-    };
-
-    const selectEl = document.getElementById('letterSelect');
-    const goBtn = document.getElementById('goBtn');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-
-    function updateDisplay(letter) {
-      const data = letterData[letter];
-
-      if (data) {
-        selectEl.value = letter;
-        document.getElementById('displayLetter').textContent = letter;
-        document.getElementById('displayName').textContent = data.name;
-        document.getElementById('displayDescription').textContent = data.description;
-        
-        const imageFileName = `${letter.toLowerCase()}.jpg`;
-        document.getElementById('displayImage').src = imageFileName;
-        document.getElementById('displayImage').alt = data.name;
-
-        const currentIndex = selectEl.selectedIndex;
-        prevBtn.disabled = (currentIndex === 0);
-        nextBtn.disabled = (currentIndex === selectEl.options.length - 1);
-      }
-    }
-
-    function setTheme(theme) {
-      if (theme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggleBtn.textContent = 'Switch to Light Mode';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-        themeToggleBtn.textContent = 'Switch to Dark Mode';
-        localStorage.setItem('theme', 'light');
-      }
-    }
-
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      if (currentTheme === 'dark') {
-        setTheme('light');
-      } else {
-        setTheme('dark');
-      }
-    });
-
-    goBtn.addEventListener('click', () => {
-      updateDisplay(selectEl.value);
-    });
-
-    prevBtn.addEventListener('click', () => {
-      const currentIndex = selectEl.selectedIndex;
-      if (currentIndex > 0) {
-        selectEl.selectedIndex = currentIndex - 1;
-        updateDisplay(selectEl.value);
-      }
-    });
-
-    nextBtn.addEventListener('click', () => {
-      const currentIndex = selectEl.selectedIndex;
-      if (currentIndex < selectEl.options.length - 1) {
-        selectEl.selectedIndex = currentIndex + 1;
-        updateDisplay(selectEl.value);
-      }
-    });
-
-    updateDisplay(selectEl.value);
-  </script>
-
-</body>
-</html>
+            <table>
+                <thead><tr><th>2026-27 Season</th></tr></thead>
+                <tbody>
+                    <tr><td>05-11-2026 | AIME II</td></tr>
+                    <tr><td>07-03-2026 | MATHCOUNTS State</td></tr>
+                    <tr><td>06-12-2026 | BMT Online</td></tr>
+                    <tr><td>18-04-2026 | ARML Local</td></tr>
+                    <tr><td>30-05-2026 | ARML</td></tr>
+                </tbody>
+            </table>
