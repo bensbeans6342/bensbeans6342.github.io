@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chudmaxxing - Non-Disclosure Agreement</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Print Styling */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+                padding: 0 !important;
+            }
+            .print-card {
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                background: transparent !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 min-h-screen font-sans transition-colors duration-200 antialiased py-6 sm:py-10">
 
+    <!-- Sticky Floating Action Bar -->
+    <header class="no-print max-w-3xl mx-auto px-4 mb-6">
+        <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 shadow-sm flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+                <div class="w-7 h-7 rounded-md bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="font-semibold text-slate-900 dark:text-white text-xs sm:text-sm">chudmaxxing Governance</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none" title="Toggle Light/Dark Theme">
+                    <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+                </button>
+
+                <!-- Print / Save PDF Button -->
+                <button onclick="window.print()" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium px-3.5 py-2 rounded-lg shadow-sm transition-all focus:outline-none">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print / Save PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-3xl mx-auto px-4">
+        
+        <!-- Document Paper Card -->
+        <article class="print-card bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200/80 dark:border-slate-800/80 p-6 sm:p-12 transition-colors">
+            
+            <!-- Document Header -->
+            <header class="border-b border-slate-200 dark:border-slate-800 pb-6 mb-8">
+                <h1 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white mb-4 uppercase font-serif text-center sm:text-left">
+                    NON-DISCLOSURE AGREEMENT
+                </h1>
+
+                <p class="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/50 italic">
+                    This Non-Disclosure Agreement (the "Agreement") is entered into by and between the administration of <strong class="text-slate-900 dark:text-white not-italic font-semibold">chudmaxxing</strong> (the "Disclosing Party") and the undersigned member (the "Receiving Party").
+                </p>
+            </header>
+
+            <!-- Document Sections -->
+            <div class="space-y-7 text-slate-700 dark:text-slate-300 leading-relaxed">
+                
+                <!-- Section 1 -->
+                <section class="space-y-1.5">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">1.</span> Scope of Confidential Information
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        Confidential Information includes all discussions, media, messages, and content shared within any channel of the chudmaxxing Discord server. This applies to all public text channels, restricted channels, voice channels, and related direct messages.
+                    </p>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="space-y-2">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">2.</span> Obligations of the Receiving Party
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        The Receiving Party agrees to maintain the strict confidentiality of all server content. The Receiving Party shall not:
+                    </p>
+                    <ul class="pl-10 space-y-1.5 list-disc text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        <li>Share, copy, export, or screenshot any messages, documents, or media from the server to external platforms or individuals.</li>
+                        <li>Stream, record, or broadcast server activities without explicit permission from the Disclosing Party.</li>
+                        <li>Disclose personal information, user activity, or server discussions to anyone not currently holding membership in the server.</li>
+                    </ul>
+                </section>
+
+                <!-- Section 3 -->
+                <section class="space-y-1.5">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">3.</span> Term and Survivability
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        The duty to protect Confidential Information remains in effect indefinitely. This obligation continues even if the Receiving Party leaves the server voluntarily, is kicked, or is banned.
+                    </p>
+                </section>
+
+                <!-- Section 4 -->
+                <section class="space-y-1.5">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">4.</span> Destruction of Materials
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        Upon termination of server membership, the Receiving Party must permanently delete all saved or downloaded Confidential Information, including chat logs, screenshots, and media files originating from the server.
+                    </p>
+                </section>
+
+                <!-- Section 5 -->
+                <section class="space-y-1.5">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">5.</span> Consequences of Breach
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-600 dark:text-slate-300">
+                        Any unauthorized disclosure of Confidential Information will result in an immediate and permanent ban from the server. The Disclosing Party reserves the right to report the Receiving Party to Discord Trust and Safety and communicate the breach to partner communities for blacklisting purposes.
+                    </p>
+                </section>
+
+                <!-- Section 6 -->
+                <section class="space-y-1.5 bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/50">
+                    <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-indigo-600 dark:text-indigo-400 font-mono text-xs">6.</span> Acknowledgment
+                    </h2>
+                    <p class="pl-5 text-sm sm:text-base text-slate-700 dark:text-slate-200 font-medium">
+                        By joining the server or sending a message, you affirm that you (or your legal guardian if you are below the age of 18) have received this Non-Disclosure Agreement and will follow it with the terms stated.
+                    </p>
+                </section>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-between items-center text-xs text-slate-400 dark:text-slate-500 gap-2">
+                <p>&copy; chudmaxxing Administration. All rights reserved.</p>
+                <p class="font-mono">Official Document</p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const htmlElement = document.documentElement;
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        // Check stored or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            themeIcon.className = 'fa-solid fa-sun text-sm';
+        } else {
+            htmlElement.classList.remove('dark');
+            themeIcon.className = 'fa-solid fa-moon text-sm';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fa-solid fa-moon text-sm';
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun text-sm';
+            }
+        });
+    </script>
+</body>
+</html>
